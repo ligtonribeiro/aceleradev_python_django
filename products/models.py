@@ -13,7 +13,7 @@ class Products(models.Model):
     price = models.DecimalField('Preço', max_digits=8, decimal_places=2)
     category = models.ForeignKey(
         Category, 
-        on_delete=models.deletion.DO_NOTHING,
+        on_delete=models.deletion.DO_NOTHING,   
         related_name='products'
     )
 
